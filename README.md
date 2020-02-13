@@ -11,12 +11,12 @@ Project Description:
   
   
   Team Information:
-    Nikhil Chakravarthy Doppalapudi WSU ID: 11655295
-      contact: n.doppalapudi@wsu.edu
-    Yashovardhan Sharma             WSU ID: 11602538
-      contact: yashovardhan.sharma@wsu.edu
-    Coral Jain                      WSU ID: 11632780
-      contact: coral.jain@wsu.edu
-    Hitesh Bahar                    WSU ID: 11631807
+    Nikhil Chakravarthy Doppalapudi WSU ID: 11655295 <br>
+      contact: n.doppalapudi@wsu.edu <br>
+    Yashovardhan Sharma             WSU ID: 11602538 <br>
+      contact: yashovardhan.sharma@wsu.edu <br>
+    Coral Jain                      WSU ID: 11632780 <br>
+      contact: coral.jain@wsu.edu <br>
+    Hitesh Bahar                    WSU ID: 11631807 <br>
       contact: hitesh.bahar@wsu.edu
     
