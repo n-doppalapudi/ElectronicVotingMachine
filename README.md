@@ -10,13 +10,13 @@ Project Description:
   Once the voting time is completed the system then evaluates and generates the result. The results would be declared on the web portal.
   
   
-  Team Information:
-    Nikhil Chakravarthy Doppalapudi WSU ID: 11655295 <br>
-      contact: n.doppalapudi@wsu.edu <br>
-    Yashovardhan Sharma             WSU ID: 11602538 <br>
-      contact: yashovardhan.sharma@wsu.edu <br>
-    Coral Jain                      WSU ID: 11632780 <br>
-      contact: coral.jain@wsu.edu <br>
-    Hitesh Bahar                    WSU ID: 11631807 <br>
-      contact: hitesh.bahar@wsu.edu
+  Team Information:<br>
+    1. Nikhil Chakravarthy Doppalapudi WSU ID: 11655295 <br>
+      	contact: n.doppalapudi@wsu.edu <br>
+    2. Yashovardhan Sharma             WSU ID: 11602538 <br>
+      	contact: yashovardhan.sharma@wsu.edu <br>
+    3. Coral Jain                      WSU ID: 11632780 <br>
+      	contact: coral.jain@wsu.edu <br>
+    4. Hitesh Bahar                    WSU ID: 11631807 <br>
+      	contact: hitesh.bahar@wsu.edu
     
