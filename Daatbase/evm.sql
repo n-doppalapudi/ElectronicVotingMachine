@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2020 at 09:35 PM
+-- Generation Time: Mar 14, 2020 at 10:39 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -45,16 +45,21 @@ CREATE TABLE `candidate` (
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `name` tinytext NOT NULL,
-  `pswd` tinytext NOT NULL
+  `pswd` tinytext NOT NULL,
+  `fullname` tinytext NOT NULL,
+  `address` longtext NOT NULL,
+  `age` tinyint(10) NOT NULL,
+  `gender` tinytext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `pswd`) VALUES
-(1, 'admin', 'admin'),
-(2, 'admin1', 'admin1');
+INSERT INTO `users` (`id`, `name`, `pswd`, `fullname`, `address`, `age`, `gender`) VALUES
+(1, 'admin', 'admin', '', '', 0, ''),
+(2, 'admin1', 'admin1', '', '', 0, ''),
+(4, 'hitesh', 'hitesh', 'Hitesh Bahar', 'Pulman', 28, 'Male');
 
 -- --------------------------------------------------------
 
@@ -104,7 +109,7 @@ ALTER TABLE `candidate`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `voter`
