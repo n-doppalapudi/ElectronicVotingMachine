@@ -2,6 +2,8 @@
 
 $username = filter_input(INPUT_POST,'uname');
 $password = filter_input(INPUT_POST,'psw');
+$error ="";
+$success ="";
 
 if(!empty($username)){
     if(!empty($password)){
@@ -13,14 +15,16 @@ if(!empty($username)){
         // create connection
 
         $conn = new mysqli($host,$dbusername,$dbpassword,$dbname);
+
+
+
         if(mysqli_connect_error()){
             die('Connection error ('. mysqli_connection_errno() .')'.mysqli_connection_error());
         }
         else{
-            $sql = "INSERT INTO users (name, pswd)
-            values ( '$username', '$password')";
+            $sql = "select * from users where name = '$username' and pswd = '$password'";
             if($conn->query($sql)){
-                echo "New record inserted";
+                echo "Welcome ".$username;
             }else{
                 echo "Error: ".$sql."<br>".$conn->error;
             }
