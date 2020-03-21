@@ -28,7 +28,7 @@ if(!empty($username)){
             if($conn->query($sql)){
                 echo "Welcome ".$username;
                 echo '<script>
-                window.location="Page2.html";
+                window.location="Page2.php";
                 </script>';
             }else{
                 echo "Error: ".$sql."<br>".$conn->error;
