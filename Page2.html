@@ -183,6 +183,10 @@ span.psw {
   </div>
   
   <div id="id04" class="modal">
+    <?php
+    include_once 'voting.php';
+    $result = mysqli_query($conn,"SELECT candidateID FROM candidates");
+    ?>
     
       <form class="modal-content animate" action="/action_page.php" method="post">
         <div class="imgcontainer">
@@ -192,14 +196,15 @@ span.psw {
     
         <div class="container">
           <label for="vote"><b>Please click on the radio button next to the candidate you want to vote</b></label><br>
-          <!------<Script>----->
-          <input type="radio" id="candidate1" name="vote" value="Candidate1">
-          <label for="vote">Male</label> 
-          <input type="radio" id="candidate2" name="vote" value="Candidate2">
-          <label for="vote">FeMale</label>
-          <input type="radio" id="candidate3" name="vote" value="Candidate3">
-          <label for="vote">Other</label><br>
-  
+          <?php
+          $i=0;
+          while($db_row = mysqli_fetch_array($candidateID)) {
+           ?>
+          <input type="radio" ><?php echo result[i]; ?><br>
+           <?php
+          $i++;
+          }
+          ?>  
           <button type="submit">Vote</button>
         </div>
     
