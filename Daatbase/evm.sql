@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 14, 2020 at 10:39 PM
+-- Generation Time: Mar 21, 2020 at 09:26 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -25,16 +25,23 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `candidate`
+-- Table structure for table `candidates`
 --
 
-CREATE TABLE `candidate` (
+CREATE TABLE `candidates` (
   `id` int(11) NOT NULL,
-  `candiateid` tinytext NOT NULL,
-  `name` tinytext NOT NULL,
-  `pswd` tinytext NOT NULL,
-  `color` tinytext NOT NULL
+  `candidateId` tinytext NOT NULL,
+  `party` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `candidates`
+--
+
+INSERT INTO `candidates` (`id`, `candidateId`, `party`) VALUES
+(1, 'hitesh', ''),
+(2, 'Xager', ''),
+(3, 'Bob', '');
 
 -- --------------------------------------------------------
 
@@ -78,9 +85,9 @@ CREATE TABLE `voter` (
 --
 
 --
--- Indexes for table `candidate`
+-- Indexes for table `candidates`
 --
-ALTER TABLE `candidate`
+ALTER TABLE `candidates`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -100,10 +107,10 @@ ALTER TABLE `voter`
 --
 
 --
--- AUTO_INCREMENT for table `candidate`
+-- AUTO_INCREMENT for table `candidates`
 --
-ALTER TABLE `candidate`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `candidates`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
