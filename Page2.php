@@ -204,7 +204,7 @@ span.psw {
       $result = mysqli_query($conn, $sql);
     ?>
     
-      <form class="modal-content animate" action="/action_page.php" method="post">
+      <form class="modal-content animate" action="voting.php" method="post">
         <div class="imgcontainer">
           <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
           <img src="Image.png" alt="Avatar" class="avatar">
@@ -222,13 +222,13 @@ span.psw {
                   echo '<tr>
                           <td>'.$field1name.'</td>
                           <td>'.$field2name.'</td>
-                          <input type="radio" id="male" name="gender" value="Male">
+                          <input type="radio" name="vote" value='.$field2name.'>
                           <br/>
                         </tr>' ;
               }
-          } else {
-              echo "0 results";
-          }
+            } else {
+                echo "0 results";
+            }
 
           ?>
           <button type="submit">Vote</button>
