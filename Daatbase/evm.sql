@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 21, 2020 at 09:26 PM
+-- Generation Time: Mar 22, 2020 at 01:33 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.3
 
@@ -31,17 +31,18 @@ SET time_zone = "+00:00";
 CREATE TABLE `candidates` (
   `id` int(11) NOT NULL,
   `candidateId` tinytext NOT NULL,
-  `party` blob NOT NULL
+  `party` blob NOT NULL,
+  `votes` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `candidates`
 --
 
-INSERT INTO `candidates` (`id`, `candidateId`, `party`) VALUES
-(1, 'hitesh', ''),
-(2, 'Xager', ''),
-(3, 'Bob', '');
+INSERT INTO `candidates` (`id`, `candidateId`, `party`, `votes`) VALUES
+(1, 'hitesh', '', 3),
+(2, 'Xager', '', 1),
+(3, 'Bob', '', 2);
 
 -- --------------------------------------------------------
 
@@ -110,7 +111,7 @@ ALTER TABLE `voter`
 -- AUTO_INCREMENT for table `candidates`
 --
 ALTER TABLE `candidates`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
